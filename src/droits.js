@@ -95,7 +95,7 @@ function evenementOrga(req, id) {
 }
 
 function exigerOption(evt, champ, libelle) {
-  if (!evt[champ]) throw erreur(409, `${libelle} non activé pour cet événement`);
+  if (!evt[champ]) throw erreur(409, `${libelle} : option non activée pour cet événement`);
 }
 
 module.exports = {

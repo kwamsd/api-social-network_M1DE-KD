@@ -23,6 +23,7 @@ app.use(require('./routes/evenements'));
 app.use(require('./routes/fils'));
 app.use(require('./routes/albums'));
 app.use(require('./routes/sondages'));
+app.use(require('./routes/billetterie'));
 
 app.use((req, res) => {
   res.status(404).json({ erreur: `Route ${req.method} ${req.originalUrl} introuvable` });
