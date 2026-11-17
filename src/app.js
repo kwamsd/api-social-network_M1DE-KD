@@ -21,6 +21,8 @@ app.use(require('./routes/utilisateurs'));
 app.use(require('./routes/groupes'));
 app.use(require('./routes/evenements'));
 app.use(require('./routes/fils'));
+app.use(require('./routes/albums'));
+app.use(require('./routes/sondages'));
 
 app.use((req, res) => {
   res.status(404).json({ erreur: `Route ${req.method} ${req.originalUrl} introuvable` });
