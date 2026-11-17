@@ -24,6 +24,8 @@ app.use(require('./routes/fils'));
 app.use(require('./routes/albums'));
 app.use(require('./routes/sondages'));
 app.use(require('./routes/billetterie'));
+app.use(require('./routes/shopping'));
+app.use(require('./routes/covoiturages'));
 
 app.use((req, res) => {
   res.status(404).json({ erreur: `Route ${req.method} ${req.originalUrl} introuvable` });
